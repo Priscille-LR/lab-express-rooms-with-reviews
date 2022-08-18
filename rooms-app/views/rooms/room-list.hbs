@@ -1,0 +1,12 @@
+<div class='rooms'>
+  <h2>All the rooms</h2>
+  <div class='rooms-wrapper'>
+    {{#each rooms}}
+      <div class='room'>
+        <img src={{imageUrl}} alt='' />
+        <h3>{{name}}</h3>
+        <p>{{description}}</p>
+      </div>
+    {{/each}}
+  </div>
+</div>

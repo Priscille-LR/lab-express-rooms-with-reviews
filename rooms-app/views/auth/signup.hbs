@@ -1,0 +1,26 @@
+<div id='form'>
+  <h2>Signup</h2>
+  <form action='/auth/signup' method='POST'>
+
+    <label for='email'> Email </label>
+    <input type='email' name='email' placeholder='ironhacker@gmail.com' required />
+
+    <label for='password'> Password </label>
+    <input type='password' name='password' placeholder='********' required />
+
+    <label for='fullName'> Full Name</label>
+    <input type='text' name='fullName' placeholder='Jane Doe' required />
+
+    <label for='slackID'> Slack ID </label>
+    <input type='text' name='slackID' placeholder='Jane123' />
+
+    <label for='googleID'> Google ID</label>
+    <input type='text' name='googleID' placeholder='Jane123'  />
+
+    <button type='submit'>Create account</button>
+
+    {{#if errorMessage}}
+      <p class='error'>{{errorMessage}}</p>
+    {{/if}}
+  </form>
+</div>
